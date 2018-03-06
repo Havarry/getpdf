@@ -42,10 +42,10 @@ def get_proxy_ip():
 
 # 获取pdf内容
 def get_content(purl):
-    timeout = random.choice(range(80, 180))
-    proxy = get_proxy_ip()
     while True:
         try:
+            timeout = random.choice(range(80, 180))
+            proxy = get_proxy_ip()
             req = requests.post(purl, headers=header, timeout=timeout, proxies=proxy, stream=True)
             req.encoding = 'GBK'
             break
