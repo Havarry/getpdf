@@ -105,8 +105,8 @@ def get_proxy_ip():
     proxyHost = "http-dyn.abuyun.com"
     proxyPort = "9020"
     # 代理隧道验证信息
-    proxyUser = "HJPC87609J7D516D"
-    proxyPass = "26D9C5391F9123CA"
+    proxyUser = ""
+    proxyPass = ""
     proxyMeta = "http://%(user)s:%(pass)s@%(host)s:%(port)s" % {
         "host": proxyHost,
         "port": proxyPort,
